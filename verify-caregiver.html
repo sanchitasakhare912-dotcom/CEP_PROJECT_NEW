@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Caregiver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F6FAF9;
+    color: #2E3A3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  .login-card {
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    color: #2F6F73;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #5F8F94;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    color: #2E3A3A;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    font-size: 15px;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #6FCF97;
+  }
+
+  .verify-btn {
+    width: 100%;
+    background: #6FCF97;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    font-size: 16px;
+    margin-top: 18px;
+    cursor: pointer;
+  }
+
+  .error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+</style>
+
+<div class="container">
+  <div class="login-card">
+
+    <h1>Caregiver Verification</h1>
+    <p class="subtitle">Please confirm your password to continue</p>
+
+    <form id="verifyForm">
+      <label for="password">Password</label>
+      <input type="password" id="verifyPassword" placeholder="Enter password" required>
+
+      <button type="submit" class="verify-btn">Verify</button>
+
+      <p id="errorMsg" class="error-msg"></p>
+    </form>
+
+  </div>
+</div>
+
+<script src="verify.js"></script>
+
+</body>
+</html>
