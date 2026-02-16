@@ -46,10 +46,10 @@
     <h1 class="title">Caregiver Dashboard</h1>
 
     <div class="card-grid">
-      <div class="card mint"><div class="icon">🕒</div><p>Edit Daily Routine</p></div>
-      <div class="card peach"><div class="icon">💊</div><p>Set Medicine Timings</p></div>
+      <div class="card mint"><div class="icon" onclick="goRoutine()">🕒</div><p>Edit Daily Routine</p></div>
+      <div class="card peach"><div class="icon" onclick="goMedicine()">💊</div><p>Set Medicine Timings</p></div>
       <div class="card lavender"><div class="icon">🔔</div><p>Manage Reminders</p></div>
-      <div class="card green"><div class="icon">👥</div><p>Manage "My People"</p></div>
+      <div class="card green"><div class="icon" onclick="goPeople()">👥</div><p>Manage "My People"</p></div>
       <div class="card blue"><div class="icon">🌐</div><p>Language & Preferences</p></div>
       <div class="card peach2"><div class="icon">👤</div><p>View Patient Overview</p></div>
     </div>
@@ -72,6 +72,6 @@
       window.location.href = "caregiver-register.html";
     }
   </script>
-
+  <script src="caregiver.js"></script>
 </body>
 </html>
